@@ -24,11 +24,11 @@ body {
   display: flex;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100vw;
-  height: 250px;
+  height: 230px;
   color: white;
   text-align: center;
   flex-direction: column;
-  row-gap: 35px;
+  row-gap: 15px;
 }
 
 #header h1 {
