@@ -42,4 +42,11 @@ function createLi(text) {
   return li;
 }
 
+function createElement(type, content, id) {
+  const el = document.createElement(type);
+  el.textContent = content;
+  el.id = id;
+  return el;
+}
+
 export { createWebsite };
