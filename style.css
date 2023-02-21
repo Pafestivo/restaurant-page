@@ -8,14 +8,18 @@ body {
   background-image: url(./images/pasta.jpg);
   background-attachment: fixed;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 #content {
   background-color: rgba(0, 0, 0, 0.3);
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
+/* header */
 #header {
   display: flex;
   background-color: rgba(0, 0, 0, 0.7);
@@ -43,4 +47,54 @@ body {
 #nav li {
   font-size: 25px;
   cursor: pointer;
+}
+
+/* Home */
+
+#info-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 70px auto;
+  padding: 80px 45px;
+  width: 650px;
+  height: 550px;
+  color: white;
+  border-radius: 20px;
+}
+
+#cook-img {
+  margin: 0 auto;
+  display: block;
+  max-height: 250px;
+  border-radius: 30px;
+}
+
+.description {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+br {
+  content: "";
+  margin: 20px;
+  display: block;
+  font-size: 24%;
+}
+
+/* Footer */
+
+footer {
+  width: 100vw;
+  height:40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+footer p {
+  color: white;
+  align-self: center;
+  margin: 0 auto;
+  font-size: 20px;
 }
