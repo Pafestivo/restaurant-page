@@ -13,8 +13,8 @@ body {
 
 #content {
   background-color: rgba(0, 0, 0, 0.3);
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -61,24 +61,17 @@ body {
   border-radius: 20px;
 }
 
-#cook-img {
+#info-box img {
   margin: 0 auto;
   display: block;
   max-height: 250px;
   border-radius: 30px;
 }
 
-.description {
-  margin-top: 30px;
+#info-box p {
+  margin-top: 40px;
   text-align: center;
   font-size: 35px;
-}
-
-br {
-  content: "";
-  margin: 20px;
-  display: block;
-  font-size: 24%;
 }
 
 /* Footer */

@@ -1,1 +1,6 @@
-console.log('Hello from ./src/index.js');
+import { createWebsite } from "./loadWebsite";
+import { loadHomePage  } from "./loadHome";
+
+
+createWebsite();
+loadHomePage();
