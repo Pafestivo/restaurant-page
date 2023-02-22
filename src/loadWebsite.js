@@ -18,6 +18,10 @@ function createWebsite() {
   //append all areas to the main content div
   contentDiv.append(header, main, footer);
 
+  //add highlight effect to the home nav option on page load
+  const home = document.getElementById('home');
+  home.classList.add('highlight');
+
   return contentDiv;
 }
 
