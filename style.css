@@ -49,6 +49,17 @@ body {
 #nav li {
   font-size: 25px;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#nav li:hover {
+  color: #ffd7d7;
+}
+
+.highlight {
+  transform: translateY(-5px);
+  border-bottom: 1px solid white;
+  color: #ffd7d7;
 }
 
 /* Home */
