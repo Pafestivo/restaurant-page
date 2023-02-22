@@ -5,7 +5,7 @@ function createMenu() {
 
   menu.append(
     createDish('Spaghetti Bolognese', 'Spaghetti made with minced beef, bacon and tomatoes.', 'bolognese'),
-    createDish('Lasagne', 'SPasta sheets with sauce, meat and cheese in between.', 'Lasagna'),
+    createDish('Lasagne', 'Pasta sheets with sauce, meat and cheese in between.', 'Lasagna'),
     createDish('Fettuccine Alfredo', 'Fresh fettuccine tossed with butter and parmesan cheese.', 'Fettuccine-Alfredo'),
     createDish('Pasta Carbonara', 'Pasta made with eggs, cheese, cured pork and black pepper.', 'Carbonara'),
     createDish('Ravioli', 'Italian dumping stuffed with ricotta, meat, and cheese.', 'ravioli'),
