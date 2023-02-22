@@ -26,6 +26,7 @@ function createPara(text) {
 
 function loadHomePage() {
   const contentArea = document.getElementById('main-content');
+  contentArea.innerHTML = "";
   contentArea.appendChild(createHomePage());
 }
 
