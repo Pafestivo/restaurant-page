@@ -73,7 +73,8 @@ body {
 #info-box p {
   margin-top: 40px;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
+  line-height: 50px;
 }
 
 /* Menu  */
