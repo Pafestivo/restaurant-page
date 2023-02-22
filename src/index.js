@@ -2,6 +2,7 @@ import { createWebsite } from "./loadWebsite";
 import { loadHomePage  } from "./loadHome";
 import { loadMenu } from "./loadMenu";
 import { loadContact } from "./loadContact";
+import './styles/style.css';
 
 //on first page load
 createWebsite()
