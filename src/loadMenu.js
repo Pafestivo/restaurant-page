@@ -27,12 +27,12 @@ function createDish(title, description, img) {
   desc.textContent = description;
 
   const dishImg = document.createElement('img');
-  dishImg.src = "./images/img.jpg";
+  dishImg.src = `./images/${img}.jpg`;
   dishImg.alt = `${img} dish.`;
 
-  dish.appendChild(dishName);
-  dish.appendChild(desc);
-  dish.appendChild(dishImg);
+  dish.append(dishName, desc, dishImg);
+
+  return dish;
 }
 
 function loadMenu() {
