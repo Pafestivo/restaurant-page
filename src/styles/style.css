@@ -6,7 +6,7 @@
 
 body {
   font-family: 'serif';
-  background-image: url(../images/pasta.jpg);
+  background-image: url(../../dist/images/pasta.jpg);
   background-attachment: fixed;
   background-size: cover;
   overflow-x: hidden;

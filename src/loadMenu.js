@@ -26,7 +26,7 @@ function createDish(title, description, img) {
   const desc = makeEl('p', '', description)
   desc.classList.add('description');
 
-  dish.append(dishName, desc, makeEl('img', `../src/images/${img}.jpg`, `${img} dish`));
+  dish.append(dishName, desc, makeEl('img', `./images/${img}.jpg`, `${img} dish`));
 
   return dish;
 }
