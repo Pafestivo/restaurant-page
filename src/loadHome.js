@@ -1,6 +1,6 @@
 function createHomePage() {
   const home = document.createElement('div');
-  home.id = 'home';
+  home.id = 'home-container';
 
   const infoBox = document.createElement('div');
   infoBox.id = 'info-box';
