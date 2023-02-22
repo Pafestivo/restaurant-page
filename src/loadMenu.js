@@ -1,6 +1,7 @@
+import { makeEl } from "./makeEL";
+
 function createMenu() {
-  const menu = document.createElement('div');
-  menu.id = 'menu-container'
+  const menu = makeEl('div', 'menu-container');
 
   menu.append(
     createDish('Spaghetti Bolognese', 'Spaghetti made with minced beef, bacon and tomatoes.', 'bolognese'),
@@ -18,19 +19,24 @@ function createMenu() {
 function createDish(title, description, img) {
   const dish = document.createElement('div');
   dish.classList.add('dish');
-  const dishName = document.createElement('p');
+  const dishName = makeEl('p', '', title);
   dishName.classList.add('title');
-  dishName.textContent = title;
+  // const dishName = document.createElement('p');
+  // dishName.classList.add('title');
+  // dishName.textContent = title;
 
-  const desc = document.createElement('p');
+  const desc = makeEl('p', '', description)
   desc.classList.add('description');
-  desc.textContent = description;
+  // const desc = document.createElement('p');
+  // desc.classList.add('description');
+  // desc.textContent = description;
 
-  const dishImg = document.createElement('img');
-  dishImg.src = `./images/${img}.jpg`;
-  dishImg.alt = `${img} dish.`;
+  // const dishImg = makeEl('img', `./images/${img}.jpg`, `${img} dish`);
+  // const dishImg = document.createElement('img');
+  // dishImg.src = `./images/${img}.jpg`;
+  // dishImg.alt = `${img} dish.`;
 
-  dish.append(dishName, desc, dishImg);
+  dish.append(dishName, desc, makeEl('img', `./images/${img}.jpg`, `${img} dish`));
 
   return dish;
 }
