@@ -19,22 +19,12 @@ function createMenu() {
 function createDish(title, description, img) {
   const dish = document.createElement('div');
   dish.classList.add('dish');
+
   const dishName = makeEl('p', '', title);
   dishName.classList.add('title');
-  // const dishName = document.createElement('p');
-  // dishName.classList.add('title');
-  // dishName.textContent = title;
 
   const desc = makeEl('p', '', description)
   desc.classList.add('description');
-  // const desc = document.createElement('p');
-  // desc.classList.add('description');
-  // desc.textContent = description;
-
-  // const dishImg = makeEl('img', `./images/${img}.jpg`, `${img} dish`);
-  // const dishImg = document.createElement('img');
-  // dishImg.src = `./images/${img}.jpg`;
-  // dishImg.alt = `${img} dish.`;
 
   dish.append(dishName, desc, makeEl('img', `./images/${img}.jpg`, `${img} dish`));
 
