@@ -1,22 +1,16 @@
+import { makeEl } from "./makeEL";
+
 function createContact() {
-  const contact = document.createElement('div');
-  contact.id = 'contact-container'
 
-  const callUs = document.createElement('p');
-  callUs.id = 'call-us';
-  callUs.textContent = 'Call Us: 555-555-5555';
+  const contact = makeEl('div', 'contact-container');
 
-  const location = document.createElement('p');
-  location.id = 'location';
-  location.innerHTML = '<i class="fa-sharp fa-solid fa-location-dot"></i> 86305 Ocean Ave.';
-
-  const locationImg = document.createElement('img');
-  locationImg.src = "./images/map-pin.jpg";
-  locationImg.alt = "location";
+  const callUs = makeEl('p', 'call-us', 'Call Us: 555-555-5555');
+  const location = makeEl('p', 'location', '<i class="fa-sharp fa-solid fa-location-dot"></i> 86305 Ocean Ave.');
+  const locationImg = makeEl('img', './images/map-pin.jpg', 'location');
 
   contact.append(callUs, location, locationImg);
 
-  return contact
+  return contact;
 }
 
 function loadContact() {
