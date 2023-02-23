@@ -5,6 +5,12 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    //organize the dist content in matching folders
+    filename: '[name].js',
+    assetModuleFilename: pathData => {
+      const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
+      return `${filepath}/[name][ext]`;
+  },
   },
   devtool: "inline-source-map",
   module: {

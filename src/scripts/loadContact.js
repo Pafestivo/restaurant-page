@@ -1,4 +1,5 @@
 import { makeEl } from "./makeEL";
+import location from "../images/map-pin.jpg"
 
 function createContact() {
 
@@ -7,7 +8,7 @@ function createContact() {
   contact.append(
     makeEl('p', 'call-us', 'Call Us: 555-555-5555'), 
     makeEl('p', 'location', '<i class="fa-sharp fa-solid fa-location-dot"></i> 86305 Ocean Ave.'), 
-    makeEl('img', './images/map-pin.jpg', 'location'));
+    makeEl('img', location, 'location'));
 
   return contact;
 }

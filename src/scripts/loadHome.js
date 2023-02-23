@@ -1,4 +1,5 @@
 import { makeEl } from "./makeEL";
+import founderImg from "../images/founder-img.jpg";
 
 function createHomePage() {
 
@@ -6,7 +7,7 @@ function createHomePage() {
   const infoBox = makeEl('div', 'info-box');
 
   infoBox.append(
-    makeEl('img', './images/founder-img.jpg', 'Giuseppe Franchitti'),
+    makeEl('img', founderImg, 'Giuseppe Franchitti'),
     makeEl('p', '', 'Founded by Giusepee Franchitti Cooking passionately since 1962')
   )
 
