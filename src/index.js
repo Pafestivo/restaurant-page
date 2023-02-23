@@ -1,7 +1,7 @@
-import { createWebsite } from "./loadWebsite";
-import { loadHomePage  } from "./loadHome";
-import { loadMenu } from "./loadMenu";
-import { loadContact } from "./loadContact";
+import { createWebsite } from "./scripts/loadWebsite";
+import { loadHomePage  } from "./scripts/loadHome";
+import { loadMenu } from "./scripts/loadMenu";
+import { loadContact } from "./scripts/loadContact";
 import './styles/contact.css';
 import './styles/footer.css';
 import './styles/general.css';
