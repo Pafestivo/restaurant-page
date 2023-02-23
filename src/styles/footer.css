@@ -1,0 +1,15 @@
+footer {
+  width: 100vw;
+  height:40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+footer p {
+  color: white;
+  align-self: center;
+  margin: 0 auto;
+  font-size: 20px;
+}

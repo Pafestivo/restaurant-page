@@ -1,0 +1,41 @@
+/* header */
+#header {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 215px;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+}
+
+#header h1 {
+  font-family: 'Italianno', 'serif';
+  font-size: 120px;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  column-gap: 70px;
+  list-style: none;
+}
+
+#nav li {
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#nav li:hover {
+  color: #ffd7d7;
+}
+
+.highlight {
+  transform: translateY(-5px);
+  border-bottom: 1px solid white;
+  color: #ffd7d7;
+}

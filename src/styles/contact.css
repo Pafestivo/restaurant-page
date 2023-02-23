@@ -1,0 +1,32 @@
+#contact-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 70px auto;
+  padding: 80px 45px;
+  width: 900px;
+  height: max-content;
+  color: white;
+  border-radius: 20px;
+}
+
+#call-us {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 80px;
+}
+
+#location {
+  font-size: 40px;
+  text-align: center;
+}
+
+.fa-location-dot {
+  color: rgb(235, 61, 61);
+}
+
+#contact-container img {
+  margin: 35px auto 0 auto;
+  display: block;
+  max-height: 400px;
+  border-radius: 50px;
+  filter: brightness(75%);
+}
